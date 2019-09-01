@@ -8,6 +8,7 @@ vault-package-gpg-file-managed:
     - name: /opt/vault/hashicorp.asc
     - contents: |
         {{ vault.hashicorp_gpg_key | indent(8) }}
+    - encoding: ascii
     - makedirs: True
 
 vault-package-gpg-pkg-installed:
