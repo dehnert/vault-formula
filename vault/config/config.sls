@@ -6,7 +6,6 @@
 vault-config-config-file-serialize:
   file.serialize:
     - name: /etc/vault/conf.d/config.json
-    - encoding: utf-8
     - formatter: json
     - dataset: {{ vault.config | json }}
     - user: root
